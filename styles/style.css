@@ -1,0 +1,93 @@
+/* FONTS */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html {
+  	font-family: 'Open Sans', sans-serif;
+  	font-size: 14px;
+  	background: #fff;
+ 	color: #656565;
+ 	padding: 0;
+ 	margin: 0;
+}
+
+.header {
+    display: block;
+    width: 1200px;
+ 	display: flex;
+  	flex-direction: row;
+  	flex-wrap: nowrap;
+  	margin: 0 auto;
+}
+
+.header-logo {
+
+}
+
+.header-logo-text {
+	color: #009bff;
+	padding-top: 4px;
+	margin-left: 20px;
+	min-width: 210px;
+}
+
+.header-rectangle {
+	width: 160px;
+    padding: 4px;
+    border: 2px solid #55a831;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+
+.header-rectangle img {
+	float: left;
+	margin: 5px;
+}
+
+.header-rectangle p {
+	float: left;
+	margin: 0 10px;
+	color: #55a831;
+}
+
+.header-time {
+	width: 160px;
+	margin-left: 20px;
+	text-align: center;
+	color: #5d5d5d;
+}
+
+.header-time img {
+	float: left;
+	margin: 10px;
+}
+
+.header-time p {
+	margin: 6px 10px;
+}
+
+.header-time p span {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.header-phone {
+	width: 220px;
+	margin-left: 20px;
+	text-align: center;
+}
+
+.header-phone img {
+	float: left;
+	margin: 10px;
+	color: #5d5d5d;
+}
+
+.header-phone p {
+	font-size: 19px;
+	font-weight: bold;
+	margin: 6px 10px;
+}
+
+.header-phone a {
+	font-size: 12px;
+}
