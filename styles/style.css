@@ -16,11 +16,11 @@ html {
  	display: flex;
   	flex-direction: row;
   	flex-wrap: nowrap;
-  	margin: 0 auto;
+  	margin: 20px auto;
 }
 
 .header-logo {
-
+	margin-top: 2px;
 }
 
 .header-logo-text {
@@ -45,7 +45,7 @@ html {
 
 .header-rectangle p {
 	float: left;
-	margin: 0 10px;
+	margin: 2px 0 0 12px;
 	color: #55a831;
 }
 
@@ -90,4 +90,18 @@ html {
 
 .header-phone a {
 	font-size: 12px;
+}
+
+.header-phone a:visited {
+	color: #0089cc;
+}
+
+
+
+.section-1 {
+	background-image: url(../img/bg-1.png);
+	min-height: 500px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
