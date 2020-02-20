@@ -127,6 +127,12 @@ html {
     margin: auto;
 }
 
+@media screen and (max-width: 600px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
 
 /***  ***/
 
@@ -415,14 +421,19 @@ html {
 
 .tab-center {
     float: left;
-    margin-top: 7%;
+    margin-top: 3%;
     text-align: center;
     font-size: 8px;
     width: 20%;
     height: 20%;
 }
+
 .tab-center:hover {
     background-color: #c9e5f7;
+}
+
+.tab-center:hover > h4 {
+    text-decoration: underline; 
 }
 
 @media screen and (min-width: 600px) {
@@ -432,9 +443,13 @@ html {
 }
 
 @media screen and (max-width: 600px) {
-    .tab-img {
+    .tab-img-hide {
         display: none;
     }
+}
+
+.tab2 {
+    width: 13%;
 }
 
 .tab-center h4 {
@@ -450,6 +465,10 @@ html {
 .tab-center p {
     margin: 0;
     margin-bottom: 5px;
+}
+
+.tab-description:hover {
+    background-color: #f7f7f7;
 }
 
 .tab-icon {
@@ -471,17 +490,6 @@ html {
     list-style: none;
     position: relative;
     margin: -1px 0 0 -1px;
-}
-
-.tabs__caption li:last-child:before {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    right: -2px;
-    z-index: -1;
-    height: 5px;
-    background: #0d8fe3;
 }
 
 .tabs__caption ul {
@@ -524,7 +532,7 @@ html {
     color: #0d8fe3;
 }
 
-.active::after {
+.tabs__caption .active::after {
     border: medium solid transparent;
     content: "";
     top: 0;
@@ -550,8 +558,16 @@ html {
 .tabs__content {
     display: none;
     border-radius: 0 5px 5px 5px;
-    padding: 7px 15px;
+
 }
+
+.tabs__content h3 {
+    display: inline-block;
+    width: 60%;
+    font-size: 1.4vw;
+
+}
+
 .tabs__content.active {
     display: block;
 }
