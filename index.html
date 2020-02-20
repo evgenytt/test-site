@@ -4,20 +4,170 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/tabs.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>
     <title>Web Site Title</title>
   </head>
 
   <body>
+    <div class="overlay"></div>
     <header class="header">
-      <div class="header-logo"><img src="img/logo.png" alt="Ирвас"></div>
-      <div class="header-logo-text">Остекление балконов и лоджий</br>в Москве и Московской области</div>
+      <div class="header-logo"><img src="img/logo.png" alt="Ирвас"><p>Остекление балконов и лоджий</br>в Москве и Московской области</p></div>
       <div class="header-rectangle"><img src="img/header-img1.png"><p>ВЫЗВАТЬ</br>ЗАМЕРЩИКА</p></div>
       <div class="header-time"><img src="img/header-img2.png"><p>без выходных</br><span>9:00 - 19:00</span></p></div>
       <div class="header-phone"><img src="img/header-img3.png"><p> +7 (495) 646-61-71</p><a href="#">Заказать обратный звонок</a></div>
     </header>
     
-    <section class="section-1"></section>
+    <section class="section-1">
+      <div class="wrapper">
+        <div class="section-1-left"> 
+          <p>Остекление балконов "под ключ"</br></p><span>за  12 800 рублей!</br></br></span>
+          <img class="icon" src="img/icon1.png"><img class="icon" src="img/icon2.png"><img class="icon" src="img/icon3.png"><img class="icon" src="img/icon4.png">
+        </div>        
+        <div class="section-1-rectangle">          
+          <form>
+            <div class="form-inner">
+              <p>Запишитесь сегодня на</br>БЕСПЛАТНЫЙ ЗАМЕР</p>
+              <input type="text" placeholder="Введите ваше имя">
+              <input type="tel" placeholder="Номер телефона">
+              <input type="submit" value="ВЫЗВАТЬ ЗАМЕРЩИКА!">
+              <span>Ваши данные конфиденциальны</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    </br>
+    <section class="section-2">
+      <div class="wrapper">
+        <div class="section-2-left">
+          <div class="blue-line"></div>
+          <h2>ХОЛОДНОЕ</h2>
+          <img class="section-2-img" src="img/sec2pic1.png">
+          <ul class="section-2-list" type="square">
+            <li>Конструктивная толщина 42-58 мм</li>
+            <li>Остекление: полированное стекло (толщиной 4-5 мм)</li>
+            <li>Теплоизоляция: 0,07 м2 * С/Вт</li>
+            <li>Звукоизоляция: 20-27дб</li>
+          </ul>
+          <div class="section-2-down">
+            <input type="submit" value="РАССЧИТАТЬ СТОИМОСТЬ">
+            <p><span>2600 руб.кв.м.</span></br>под ключ с установкой</p>            
+            </div>
+        </div>
+        <div class="section-2-right">
+          <div class="yellow-line"></div>
+          <h2>ТЕПЛОЕ</h2>
+          <img class="section-2-img" src="img/sec2pic2.png">
+          <ul class="section-2-list" type="square">
+            <li>Конструктивная толщина 58-78 мм</li>
+            <li>Остекление: однокамерные и двухкамерные стеклопакеты</li>
+            <li>Теплоизоляция: 0,53 - 1,05 м2 * С/Вт</li>
+            <li>вукоизоляция: до 5 класса</li>
+          </ul>
+          <div class="section-2-down">
+            <input type="submit" value="РАССЧИТАТЬ СТОИМОСТЬ">
+            <p><span>4000 руб.кв.м.</span></br>под ключ с установкой</p>            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-3">
+      <div class="wrapper">
+        <h3>ЗАКАЖИТЕ ОТДЕЛКУ БАЛКОНА СО СКИДКОЙ 60%!</h3>
+        <img class="line-img" src="img/line-blu.png">
+        </br></br>
+        <div class="tabs"> 
+        <ul class="tabs__caption">
+          <li class="active">ВНУТРЕННЯЯ ОТДЕЛКА</li>
+          <li>ВНЕШНАЯЯ ОТДЕЛКА</li>
+          <li>ВЫНОСНОЕ ОСТЕКЛЕНИЕ</li>
+          <li>КРЫША НА БАЛКОН</li>
+        </ul>       
+        <div class="tabs__content active">
+          <img class="tab-img" src="img/sec-3-pic1.png">
+            <div class="tab-center">
+              <img class="tab-icon" src="img/sec-3-icon11.png">
+              <h4>Вагонка</h4>
+              <span>600 руб. кв.м.</span>
+              <p>с материалом</p>
+            </div>
+            <div class="tab-center">
+              <img class="tab-icon" src="img/sec-3-icon12.png">
+              <h4>Пластиковая вагонка</h4>
+              <span>750 руб. кв. м</span>
+              <p>с материалом</p>
+            </div>          
+            <div class="tab-center">
+              <img class="tab-icon" src="img/sec-3-icon13.png">
+              <h4>ПВХ-панели</h4>
+              <span>800 руб. кв. м</span>
+              <p>с материалом</p>
+            </div>
+            <div class="tab-center">
+              <img class="tab-icon" src="img/sec-3-icon14.png">
+              <h4>Настил пола из ламината</h4>
+              <span>1250 руб. кв. м</span>
+              <p>с материалом</p>
+            </div>
+            <div class="tab-center">
+              <img class="tab-icon" src="img/sec-3-icon15.png">
+              <h4>Настил пола из дерева</h4>
+              <span>1650 руб. кв. м</span>
+              <p>с материалом</p>
+            </div>
+
+        </div>       
+        <div class="tabs__content">
+          Содержимое второго блока
+        </div>       
+      </div>        
+      </div>
+      </br></br>
+      
+      <div class="b-popup" id="popup1">
+        <div class="section-3-rectangle">          
+          <form>
+            <div class="form-inner">
+              <p>Запишитесь сегодня на</br>БЕСПЛАТНЫЙ ЗАМЕР</p>
+              <input type="text" placeholder="Введите ваше имя">
+              <input type="tel" placeholder="Номер телефона">
+              <input type="submit" value="ВЫЗВАТЬ ЗАМЕРЩИКА!">
+              <span>Ваши данные конфиденциальны</span>
+            </div>
+          </form>
+        </div>      
+      </div>
+    </section>
+
+    <section class="section-4">
+        <h3>МЫ ГАРАНТИРУЕМ ВАМ</h3>
+        <img class="line-img" src="img/line.png">
+        <div class="section-4-content"><img class="section-4-img" src="img/sec4icon1.png"><p>Высокое качество</p></div>
+        <div class="section-4-content"><img class="section-4-img" src="img/sec4icon2.png"><p>Выполнение работ</br>под ключ</p></div>
+        <div class="section-4-content"><img class="section-4-img" src="img/sec4icon3.png"><p></br>Монтаж в короткие</br>сроки</p></div>
+        <div class="section-4-content"><img class="section-4-img" src="img/sec4icon4.png"><p></br>Цены от</br>производителя</p></div>
+        <div class="section-4-content"><img class="section-4-img" src="img/sec4icon5.png"><p></br>Бесплатный замер</br>и консультация</p></div>
+        <div class="section-4-content"><img class="section-4-img" src="img/sec4icon6.png"><p></br>Тепло и уют на</br>балконе</p></div>
+    </section>
+
+    <section class="section-5">
+      <div class="wrapper">
+        <h3>КАК НАС НАЙТИ</h3>
+        <img class="line-img" src="img/line-blu.png">
+        <div class="map"><iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2235.261817404709!2d37.60290921600926!3d55.92749898597208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53a0ac32d875f%3A0xe1064c1e68c2b74a!2z0YPQuy4g0JLRi9GB0YLQsNCy0L7Rh9C90LDRjywgNTMsINCS0LXRiNC60LgsINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sIDEyNzU0Mw!5e0!3m2!1sru!2sru!4v1582150768189!5m2!1sru!2sru" width="500" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+        <div class="section-5-right">        
+          <p><h4>Юридический адрес:</h4>ООО «ИРВАС», 127411, г.Москва, Дмитровское шоссе, д.125, корпус 1</p>
+          <p><h4>Фактический адрес:</h4>ООО «ИРВАС», 141031, МО, Мытищинский р-он, п.Вешки,Выставочная, д. 53</p>
+          <p><h4>Телефон:</h4>+7 (495) 646-61- 71 (многоканальный)</p>
+          <p><h4>E-mail:</h4>info@irvasokna.ru</p>
+          <p><h4>Режим работы:</h4>9:00 - 18:00 без выходных</p>
+        </div>
+      </div>
+    </section>
+    
   </body>
 
 </html>
